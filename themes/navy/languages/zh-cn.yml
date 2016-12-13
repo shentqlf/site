@@ -4,6 +4,7 @@ menu:
   news: 新闻
   plugins: 插件
   themes: 主题
+  ESP32: ESP32
   search: 搜索
 
 index:
@@ -47,23 +48,24 @@ sidebar:
     troubleshooting: 问题解答
     contributing: 贡献
   api:
-    core: 核心
-    overview: 概述
-    events: 事件
-    locals: 本地变量
-    router: 路由
-    box: 盒(Box)
-    rendering: 渲染
-    posts: 文章
-    scaffolds: 模版 (Scaffold)
-    themes: 主题
-    extensions: 扩展
-    console: 控制台 (Console)
-    deployer: 部署器 (Deployer)
-    filter: 过滤器 (Filter)
-    generator: 生成器 (Generator)
-    helper: 辅助函数 (Helper)
-    migrator: 迁移器 (Migrator)
-    processor: 处理器 (Processor)
-    renderer: 渲染引擎 (Renderer)
-    tag: 标签 (Tag)
+    core: 概述
+    overview: 核心
+    common: 公共基础
+    device: MCU外设
+    gpio: 通用输入输出引脚(Gpio)
+    uart: 串口(Uart)
+    analog: 模拟量输入(Analog)
+    exti: 外部中断(Exti)
+    timer: 定时器(Timer)
+    pwm: PWM(Pwm)
+    in_capture: 输入捕获(InCapture)
+    rtc: 实时时钟(Rtc)
+    wdg: 看门狗(Iwdg)
+    iflash: 内部存储 (Flash)
+    spi: SPI (Spi)
+    i2c: I2C (I2c)
+    network: 网络
+    eth: 网卡
+    w5500: w5500
+    wifi: WiFi
+    esp8266: esp8266

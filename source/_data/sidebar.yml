@@ -25,25 +25,25 @@ docs:
   miscellaneous:
     troubleshooting: troubleshooting.html
     contributing: contributing.html
-
 api:
-  core:
-    overview: index.html
-    events: events.html
-    locals: locals.html
-    router: router.html
-    box: box.html
-    rendering: rendering.html
-    posts: posts.html
-    scaffolds: scaffolds.html
-    themes: themes.html
-  extensions:
-    console: console.html
-    deployer: deployer.html
-    filter: filter.html
-    generator: generator.html
-    helper: helper.html
-    migrator: migrator.html
-    processor: processor.html
-    renderer: renderer.html
-    tag: tag.html
+  overview:
+    core: index.html
+    common: common.html
+  device:
+    gpio: gpio.html
+    uart: uart.html
+    analog: analog.html
+    exti: exti.html
+    timer: timer.html
+    pwm: pwm.html
+    in_capture: in_capture.html
+    rtc: rtc.html
+    wdg: wdg.html
+    iflash: iflash.html
+    spi: spi.html
+    i2c: i2c.html
+  network:
+    eth:
+      w5500: w5500.html
+    wifi:
+      esp8266: esp8266.html
