@@ -1,10 +1,11 @@
 menu:
-  docs: 文档
+  quickstart: 快速入门
   api: API
+  docs: 文档
   news: 新闻
-  plugins: 插件
-  themes: 主题
   ESP32: ESP32
+  download: 下载
+  shop: 购买
   search: 搜索
 
 index:
@@ -69,3 +70,31 @@ sidebar:
     w5500: w5500
     wifi: WiFi
     esp8266: esp8266
+  quickstart:
+    core: 概述
+    overview: 核心
+    common: 公共基础
+    device: MCU外设
+    gpio: 通用输入输出引脚(Gpio)
+    uart: 串口(Uart)
+    analog: 模拟量输入(Analog)
+    exti: 外部中断(Exti)
+    timer: 定时器(Timer)
+    pwm: PWM(Pwm)
+    in_capture: 输入捕获(InCapture)
+    rtc: 实时时钟(Rtc)
+    wdg: 看门狗(Iwdg)
+    iflash: 内部存储 (Flash)
+    spi: SPI (Spi)
+    i2c: I2C (I2c)
+    network: 网络
+    eth: 网卡
+    w5500: w5500
+    wifi: WiFi
+    esp8266: esp8266
+  
+  ESP32:
+    getting_started: 开始使用
+    overview: ESP32概述
+    esp32-bit: esp32-bit
+    esp32-t: esp32-t

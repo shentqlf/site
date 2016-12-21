@@ -1,22 +1,47 @@
 title: 串口
 ---
-本文件提供您更丰富的 API 信息，使您更容易修改 Hexo 源代码或编写插件。如果您只是想查询 Hexo 的基本使用方法，请参阅 [文档](../docs/)。
+* 串口支持：USART1、USART2、USART3、UART4、UART5
+* 中断支持：
+5个串口的接收中断源 USART_IT_RXNE；当单片机接收到一个字节后会产生一次中断。
+5个串口的发送完成中断源USART_IT_TC；当单片机发送完成一个字符串或者缓冲区后产生一次中断。
+* 串口1,2,3发送模式采用DMA自动发送模式，大大节省CPU占用。
+* 发送缓冲区最大为UART_MAX_SEND_BUF。用户可以根据自己的需要进行配置。默认配置为128.
+* 完美支持printf。注意：本文并不是对printf的接收和发送进行了重定义。而是通过其他方法来实现的。
+* 暂时不支持remap引脚。
+* 默认开启串口接收和发送中断，用户如果不需要可以不绑定相关函数，
+* 由于内部串口忙机制基于串口发送完成中断来实现，所以不能在no_interrupt的情况下使用串口发送函数，否则将导致该串口一直处于忙状态。
+* 串口中使用了DMA,会是串口发送函数执行为异步模型，当cpu执行完发送函数后，其实并没有真正的执行完串口输出，如果其后续的代码必须要等待串口执行完成才能处理必须要添加等待wait_busy()函数(一般不会使用这种情况)。两个连续的printf不需要用户去处理，内部做好了处理。如果有操作系统的支持，建议用户在两个printf之间加一个系统延时OS_delayTimes(1)，以降低CPU使用率。如果不在乎这点时间也可以不做处理。
 
-在开始之前，请注意本文件仅适用于 Hexo 3 及以上版本。
+## UART类
 
-## 初始化
+``` cpp
+class Uart:public Print
+{
+public:
+    Uart(USART_TypeDef *USARTx, Gpio *tx_pin, Gpio *rx_pin);
 
-首先，我们必须建立一个 Hexo 实例（instance），第一个参数是网站的根目录，也就是 `base_dir`，而第二个参数则是初始化的选项。接著执行 `init` 方法后，Hexo 会加载插件及配置文件。
+    //initial uart
+    void    begin(uint32_t baud_rate,uint8_t _use_dma = 1);
+    void    begin(uint32_t baud_rate, uint8_t data_bit, uint8_t parity, float stop_bit,uint8_t _use_dma);
 
-``` js
-var Hexo = require('hexo');
-var hexo = new Hexo(process.cwd(), {});
+    //write method
+    virtual size_t  write(uint8_t c);
+    virtual size_t  write(const uint8_t *buffer, size_t size);
 
-hexo.init().then(function(){
-  // ...
-});
+    //read method
+    uint16_t    read();
+
+    //user addation method
+    void    printf(const char *fmt, ...); 
+    void    wait_busy();
+    /** Attach a function to call whenever a serial interrupt is generated
+     *
+     *  @param fptr A pointer to a void function, or 0 to set as none
+     *  @param type Which serial interrupt to attach the member function to (Seriall::RxIrq for receive, TxIrq for transmit buffer empty)
+     */
+    //attach user event
+}
 ```
-
 参数 | 描述 | 默认值
 --- | --- | ---
 `debug` | 开启调试模式。在终端中显示调试信息，并在根目录中存储 `debug.log` 日志文件。| `false`

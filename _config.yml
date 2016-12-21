@@ -4,7 +4,7 @@ description: "eBox是一个快速、高效、跨平台的嵌入式软件解决�
 author: TongQiang Shen
 language: en
 timezone: UTC
-url: https://hexo.io
+url: https://eboxmake.com
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
@@ -19,7 +19,7 @@ per_page: 0
 theme: navy
 deploy:
   type: git
-  repo: git@github.com:hexojs/hexojs.github.io.git
+  repo: git@github.com:eboxmaker/ebox_stm32f1xx.github.io.git
 
 disqus_shortname: hexojs
 google_analytics: UA-4910098-10
@@ -34,5 +34,5 @@ algolia:
   zh-cn:
     api_key: cdea7d4e47d84f6145b77e7f68689f35
     index_name: hexo_zh-cn
-twitter: hexojs
+twitter: eboxmaker
 github: eboxmaker

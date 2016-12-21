@@ -1,6 +1,7 @@
-docs: /docs/
+quickstart: /zh-cn/quickstart/
 api: /api/
+docs: /docs/
 news: /news/
-plugins: /plugins/
-themes: /themes/
-ESP32: /ESP32/
+ESP32: /zh-cn/ESP32/
+download: /download/
+shop: https://newfashionworld.taobao.com/

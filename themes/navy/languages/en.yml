@@ -1,6 +1,7 @@
 menu:
-  docs: Docs
+  quickstart: quickstart
   api: API
+  docs: Docs
   news: News
   plugins: Plugins
   themes: Themes
