@@ -1,4 +1,4 @@
-title: 开始使用eBox
+title: umi guide
 ---
 欢迎来到eBox！在使用eBox实现你的功能之前，请先准备必要的软件和硬件工具。
 本文章将以KEIL为例进行讲解，使用IAR的同学们请参阅(...)。
@@ -20,8 +20,6 @@ title: 开始使用eBox
 百度云盘下载：[下载](http://pan.baidu.com/share/link?shareid=2806070646&uk=1140968500#list/path=%2Febox%2Febox_stm32f1x%2F%E3%80%90eBox%E7%94%9F%E6%80%81%E5%9C%88%E3%80%91%E5%85%AC%E5%BC%80%E8%B5%84%E6%96%99%2F%E5%85%AC%E5%BC%80%E8%B5%84%E6%96%99%2F2.%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7&parentPath=%2Febox%2Febox_stm32f1x)
 
 ## 硬件准备
-1. [spark](http://localhost:5000/zh-cn/quickstart/guide_spark.html)
-1. [umi](http://localhost:5000/zh-cn/quickstart/guide_umi.html)
 使用eBox的spark开发板、IOT拓展板、xdebug-v3调试器三件组合而成的开发无敌套装简单组合拼接，并连接至电脑即可。
 
 ## 下载官方例程

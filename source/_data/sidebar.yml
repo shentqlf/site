@@ -54,23 +54,17 @@ quickstart:
     mcus : mcus.html
   guide:
     start: start.html
-    uart: uart.html
-    analog: analog.html
-    exti: exti.html
-    timer: timer.html
-    pwm: pwm.html
-    in_capture: in_capture.html
-    rtc: rtc.html
-    wdg: wdg.html
-    iflash: iflash.html
-    spi: spi.html
-    i2c: i2c.html
-  network:
-    eth:
-      w5500: w5500.html
-    wifi:
-      esp8266: esp8266.html	  
+  boards:
+    spark: guide_spark.html
+    umi: guide_umi.html
 
+	  
+product:
+  all_product:
+    spark: index.html
+    iot: iot.html
+    xdebug: xdebug.html
+	
 ESP32:
   getting_started:
     overview: index.html

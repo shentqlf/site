@@ -1,5 +1,6 @@
 menu:
   quickstart: 快速入门
+  product: 产品
   api: API
   docs: 文档
   news: 新闻
@@ -74,25 +75,18 @@ sidebar:
     overview: 快速入门
     brief: 简介
     architecture: 软件架构
-    mcus: 硬件平台
+    mcus: MCU支持
     guide: 引导
     start: 开始准备工作
-    uart: 串口(Uart)
-    analog: 模拟量输入(Analog)
-    exti: 外部中断(Exti)
-    timer: 定时器(Timer)
-    pwm: PWM(Pwm)
-    in_capture: 输入捕获(InCapture)
-    rtc: 实时时钟(Rtc)
-    wdg: 看门狗(Iwdg)
-    iflash: 内部存储 (Flash)
-    spi: SPI (Spi)
-    i2c: I2C (I2c)
-    network: 网络
-    eth: 网卡
-    w5500: w5500
-    wifi: WiFi
-    esp8266: esp8266
+    boards: 硬件平台安装测试
+    spark: spark
+    umi: umi
+	
+  product:
+    all_product: 所有产品
+    spark: spark
+    iot: iot
+    xdebug: xdebug
   
   ESP32:
     getting_started: 开始使用
