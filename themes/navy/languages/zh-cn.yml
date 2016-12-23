@@ -71,11 +71,12 @@ sidebar:
     wifi: WiFi
     esp8266: esp8266
   quickstart:
-    core: 概述
-    overview: 核心
-    common: 公共基础
-    device: MCU外设
-    gpio: 通用输入输出引脚(Gpio)
+    overview: 快速入门
+    brief: 简介
+    architecture: 软件架构
+    mcus: 硬件平台
+    guide: 引导
+    start: 开始准备工作
     uart: 串口(Uart)
     analog: 模拟量输入(Analog)
     exti: 外部中断(Exti)

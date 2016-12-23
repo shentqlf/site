@@ -49,10 +49,11 @@ api:
       esp8266: esp8266.html
 quickstart:
   overview:
-    core: index.html
-    common: common.html
-  device:
-    gpio: gpio.html
+    brief: index.html
+    architecture : architecture.html
+    mcus : mcus.html
+  guide:
+    start: start.html
     uart: uart.html
     analog: analog.html
     exti: exti.html
