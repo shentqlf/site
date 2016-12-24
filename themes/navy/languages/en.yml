@@ -1,11 +1,14 @@
 menu:
   quickstart: quickstart
+  product: product
   api: API
   docs: Docs
   news: News
-  plugins: Plugins
-  themes: Themes
+  ESP32: ESP32
+  download: download
+  shop: shop
   search: Search
+  
 
 index:
   get_started: Get started
@@ -22,31 +25,7 @@ sidebar:
   docs:
     getting_started: Getting Started
     overview: Overview
-    setup: Setup
-    configuration: Configuration
-    commands: Commands
-    migration: Migration
-    basic_usage: Basic Usage
-    writing: Writing
-    front_matter: Front-matter
-    tag_plugins: Tag Plugins
-    asset_folders: Asset Folders
-    data_files: Data Files
-    server: Server
-    generating: Generating
-    deployment: Deployment
-    customization: Customization
-    permalinks: Permalinks
-    themes: Themes
-    structure: Structure
-    templates: Templates
-    variables: Variables
-    helpers: Helpers
-    internationalization: Internationalization (i18n)
-    plugins: Plugins
-    miscellaneous: Miscellaneous
-    troubleshooting: Troubleshooting
-    contributing: Contributing
+
   api:
     core: 概述
     overview: 核心
@@ -69,3 +48,29 @@ sidebar:
     w5500: w5500
     wifi: WiFi
     esp8266: esp8266
+  quickstart:
+    overview: 快速入门
+    brief: 简介
+    architecture: 软件架构
+    mcus: MCU支持
+    spark_guide: spark board
+    spark_start: 开始准备工作
+    spark_example1: Blink
+    umi_guide: umi board
+    umi_start: 开始准备工作
+	
+  product:
+    all_product: 所有产品
+    spark: spark
+    iot: iot
+    xdebug: xdebug
+  
+  ESP32:
+    getting_started: 开始使用
+    overview: ESP32概述
+    esp32-bit: esp32-bit
+    esp32-t: esp32-t
+    esp32-guide: 教程
+    windows: windows开发环境
+    linux: linux开发环境
+    esp32-bluetooth: 蓝牙例程的正确使用方法
