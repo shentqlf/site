@@ -70,3 +70,7 @@ ESP32:
     overview: index.html
     esp32-bit: esp32-bit.html
     esp32-t: esp32-t.html
+  esp32-guide: 
+    windows: windows.html
+    linux: linux.html
+    esp32-bluetooth: esp32-bluetooth.html

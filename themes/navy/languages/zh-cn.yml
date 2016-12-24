@@ -93,3 +93,7 @@ sidebar:
     overview: ESP32概述
     esp32-bit: esp32-bit
     esp32-t: esp32-t
+    esp32-guide: 教程
+    windows: windows开发环境
+    linux: linux开发环境
+    esp32-bluetooth: 蓝牙例程的正确使用方法
