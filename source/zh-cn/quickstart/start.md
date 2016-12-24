@@ -27,7 +27,8 @@ title: 开始使用eBox
 ## 下载官方例程
 官方例程有两种发布模式
 1. 官方[github](https://github.com/eboxmaker/ebox_stm32f1xx)：此处是最新的程序发布区域，但是所有例程都放在了example文件夹下需要用户根据自己的需要去打开相应的例程才能实现功能。适合已入门的学员。[下载](https://github.com/eboxmaker/ebox_stm32f1xx)
+ 1.1
 2. 官方实例教程：此处是将不同的例程分别建立了不同的工程，用户使用keil5打开工程文件即可。适合初学者。[下载](http://pan.baidu.com/share/link?shareid=2806070646&uk=1140968500#list/path=%2Febox%2Febox_stm32f1x%2F%E3%80%90eBox%E7%94%9F%E6%80%81%E5%9C%88%E3%80%91%E5%85%AC%E5%BC%80%E8%B5%84%E6%96%99%2F%E5%85%AC%E5%BC%80%E8%B5%84%E6%96%99%2F3.%E4%BB%A3%E7%A0%81&parentPath=%2Febox%2Febox_stm32f1x)
-
-
+ ![](http://i1.piimg.com/567571/c518342b2f3ad4f6.png)
+ 2.1. 
 

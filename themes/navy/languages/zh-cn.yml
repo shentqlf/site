@@ -76,11 +76,11 @@ sidebar:
     brief: 简介
     architecture: 软件架构
     mcus: MCU支持
-    guide: 引导
-    start: 开始准备工作
-    boards: 硬件平台安装测试
-    spark: spark
-    umi: umi
+    spark_guide: spark board
+    spark_start: 开始准备工作
+    spark_example1: Blink
+    umi_guide: umi board
+    umi_start: 开始准备工作
 	
   product:
     all_product: 所有产品

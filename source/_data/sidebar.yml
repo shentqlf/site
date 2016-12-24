@@ -52,11 +52,11 @@ quickstart:
     brief: index.html
     architecture : architecture.html
     mcus : mcus.html
-  guide:
-    start: start.html
-  boards:
-    spark: guide_spark.html
-    umi: guide_umi.html
+  spark_guide:
+    spark_start: spark_start.html
+    spark_example1: spark_example1.html
+  umi_guide:
+    umi_start: umi_start.html
 
 	  
 product:
