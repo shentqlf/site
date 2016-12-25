@@ -32,3 +32,4 @@ XDEBUG-V3正式推出
 体积是2cm*5cm大小。
 ## Xdebug-V3图片
 ![](http://p1.bqimg.com/567571/d539bd7c65b2ad9e.jpg)
+![](http://i1.piimg.com/567571/af41454edec382c8.png)
